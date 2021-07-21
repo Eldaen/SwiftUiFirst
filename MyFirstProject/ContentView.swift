@@ -9,24 +9,22 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-//        VStack(alignment: .center, spacing: 10) { // Ещё бывает HStack для горизонтального размещения
-//            Text("Hello, Swift!")
-//                .padding(.horizontal, 50)
-//            Spacer() // Если не задана величина, то занимает всё пространство
-//                .frame(height: 50)
-//            Text("Hello")
-//            Divider()
-//            Text("Hello, Sw")
-//        }
+        //        Text("loren asd asd asd asd asd asd asd asdasdasdasd asdasdasdasd asdasd")
+        //            .tracking(5) // расстояние между символами
+        //            .lineLimit(nil)
+        //            .truncationMode(.middle) // сокращает текст по центру
+        //            .font(.largeTitle)
+        //            .multilineTextAlignment(.center)
+        //            .background(Color.init(#colorLiteral(red: 1, green: 0.6575120149, blue: 0.118575202, alpha: 1)))
+        //            .foregroundColor(.white)
+        //            .lineSpacing(50)
         
-        ZStack { // Нужен чтобы размещать вьюхи в плоскости Z, т.е. накладывать их
-            Image("epic")
-                .scaleEffect(0.3)
-            Text("Specialized Epic 2018")
-                .padding(.top, 400)
-                .font(.title)
-        }
-        //Стаки можно помещать в стаки
+        Text("I like cats") // Есть разница, в каком порядке применять модификаторы
+            .font(.largeTitle)
+            .padding()
+            .background(Color.yellow)
+            .padding()
+            .background(Color.red)
     }
 }
 
