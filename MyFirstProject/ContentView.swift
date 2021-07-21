@@ -9,22 +9,33 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        //        Text("loren asd asd asd asd asd asd asd asdasdasdasd asdasdasdasd asdasd")
-        //            .tracking(5) // расстояние между символами
-        //            .lineLimit(nil)
-        //            .truncationMode(.middle) // сокращает текст по центру
-        //            .font(.largeTitle)
-        //            .multilineTextAlignment(.center)
-        //            .background(Color.init(#colorLiteral(red: 1, green: 0.6575120149, blue: 0.118575202, alpha: 1)))
-        //            .foregroundColor(.white)
-        //            .lineSpacing(50)
+//        Image("epic")
+//            .resizable()
+//            .aspectRatio(contentMode: .fit)
         
-        Text("I like cats") // Есть разница, в каком порядке применять модификаторы
-            .font(.largeTitle)
-            .padding()
-            .background(Color.yellow)
-            .padding()
-            .background(Color.red)
+//        Image(systemName: "cloud.sun.fill") // С SF symbols можно работать как с текстом, в этом основная фишка
+//            .padding()
+//            .font(.largeTitle)
+//            .foregroundColor(.blue)
+//            .background(Color.yellow)
+//            .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
+        
+//        Text("Big cats are best")
+//            .foregroundColor(.red)
+//            .font(.largeTitle)
+//            .background(
+//                Image("epic")
+//                    .resizable()
+//                    .frame(width: 400, height: 250)
+//        )
+        Text("Big cats are best")
+                   .foregroundColor(.red)
+                   .font(.largeTitle)
+                   .background( // может так же принимать форму, не только цвет и картинки
+                       Circle()
+                        .fill(Color.black)
+                        .frame(width: 400, height: 250)
+               )
     }
 }
 
